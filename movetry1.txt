@@ -1,0 +1,15 @@
+#         if bestValue:
+#             if bestValue[-(depth-2)] in currentMoves:
+#             #print(currentMoves[0])
+#                 currentMoves.insert(0,bestValue[-(depth-2)])
+            #print("aftersort",currentMoves[0])    
+            #currrentMoves = sorted(currentMoves,key= lambda x: (bestValue[-(depth-1)]))
+#             flag = currentMoves.index(bestValue[-(depth-1)])
+#             if flag is not None:
+#                 currentMoves.insert(0,bestValue[-(depth-1)])
+#                 currentMoves.pop(flag)
+#                 print("aftersort",currentMoves[0])
+            
+#             if bestValue[-(depth-1)] in currentMoves:
+#                 #print(depth)
+#                 currentMoves.insert(0, currentMoves.pop(currentMoves.index(bestValue[-(depth-1)])))

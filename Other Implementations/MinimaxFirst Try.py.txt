@@ -1,0 +1,53 @@
+    #endgame
+
+#     if my_turn:
+#         m2 = ([1,1])
+#         if len(game.get_active_moves()) == 0 or depth > 4:
+#         #return player.utility(game,my_turn)
+#         #print((tuple(game.get_active_position()),player.utility(game,my_turn)))
+#             m2 = tuple(game.get_active_position())
+#             flag = game.move_is_in_board(m2[0],m2[1])
+#             score = player.utility(game,my_turn)
+#             #print (m2,score)
+#             if flag:
+#                 return (m2,score)
+    
+#         bestScore = float('-inf')
+#         currentMoves = game.get_player_moves(player)
+#         for i in currentMoves:
+#             if game.move_is_in_board(i[0],i[1]):
+#                 game,flag,winner = game.forecast_move(i)
+#                 m2,score = minimax(player,game,time_left,depth+1,False)
+#                 if score>bestScore: 
+#                     bestScore = score
+#                     m2 = m2
+#         #print(m2,bestScore)
+#         #if game.move_is_in_board(m2[0],m2[1]) and game.is_spot_open(m2[0],m2[1]):
+#         print(my_turn,m2,bestScore)
+#         return (m2, bestScore)
+#     else:
+#         m2 = ([1,1])
+#         if len(game.get_active_moves()) == 0 or depth >4 :
+#             #return player.utility(game,my_turn)
+#             #print((tuple(game.get_active_position()),player.utility(game,my_turn)))
+#             m2 = tuple(game.get_active_position())
+#             flag = game.move_is_in_board(m2[0],m2[1])
+#             score = player.utility(game,my_turn)
+#             #print (m2,score)
+#             if flag:
+#                 return (m2,score)
+        
+#         bestScore = float('inf')
+#         currentMoves = game.get_player_moves(player)
+#         for i in currentMoves:
+#             if game.move_is_in_board(i[0],i[1]):
+#                 game,flag,winner = game.forecast_move(i)
+#                 m2,score = minimax(player,game,time_left,depth+1,True)
+#                 if score < bestScore: 
+#                     bestScore = score
+#                     m2 = m2
+#         #print(m2,bestScore)
+#         #if game.move_is_in_board(m2[0],m2[1]) and game.is_spot_open(m2[0],m2[1]):
+#         print(my_turn,m2,bestScore)
+#         return (m2, bestScore)
+            
